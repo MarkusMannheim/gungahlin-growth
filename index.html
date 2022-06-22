@@ -18,6 +18,7 @@
 
     <!-- Initial scripts -->
     <script src="./resources/d3.v6.min.js"></script>
+    <script src="./config.js"></script>
     <script src="./resources/topojson.v3.min.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
@@ -46,7 +47,7 @@
             });
 
           // set up MapBox engine
-          mapboxgl.accessToken = "pk.eyJ1IjoibmV3cy1vbjFpbmUiLCJhIjoiR3FlZFZlVSJ9._30EFE9XYhQitqf4gzRG-g";
+          mapboxgl.accessToken = config.mapBoxKey;
           map = new mapboxgl.Map({
             container: "map",
             style: "mapbox://styles/mapbox/light-v10",
